@@ -5,12 +5,9 @@ import numpy as np
 import plotly.express as px
 from google.oauth2 import service_account
 import google.auth
-from googleapiclient.discovery import build
-from google.oauth2.service_account import Credentials
-import httplib2
-import os
 
-from apiclient import discovery
+
+
 
 
 def load_data():
@@ -136,3 +133,5 @@ fig_tree.update_layout(title='Number of Complaints by Issue and Sub-Issue',
                   yaxis_title='Sub-Issue' 
                   )
 col8.plotly_chart(fig_tree, use_container_width=True)
+
+st.write("Designed by Mohammad Goani")
